@@ -1,0 +1,727 @@
+/*
+Theme Name:    WC Melb Mobile 
+Theme URI:     http://www.elevenmedia.com.au
+Description:   Quick WordPress Theme for the WC Melb Weekend  
+Author:        Aaron Rutley
+Author URI: 	http://www.twitter.com/aaronrutley
+Version: 1.0	
+License: GNU General Public License version 3.0
+License URI: http://www.gnu.org/licenses/gpl-3.0.html
+
+*/
+
+/* =============================================================================
+   General Styles
+   ========================================================================== */
+	body {
+	font-size:14px;
+	line-height:21px;
+	background:#2e2e2e;
+	font-weight:300;
+	font-family:HelveticaNeue-Light, "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial,sans-serif;
+   color:#222;
+
+	}
+	
+	h1,h2,h3,h4,h5,h6 {
+	font-weight:500;
+	padding-bottom:5px;
+	font-family:Raleway, sans-serif;
+	}
+	
+	h1 {
+	font-size:24px;
+	line-height:26px;
+	color:#222;
+   margin-top:15px;
+   margin-bottom: 10px;
+	}
+	
+	h2 {
+	margin: 0;
+	font-size:18px;
+	line-height:35px;
+	color:#222;
+	text-align:left;
+	}
+	
+	h3 {
+	font-size:13px;
+	line-height:26px;
+	color:#222;
+	}
+	
+	h4 {
+	font-size:13px;
+	line-height:22px;
+	color:#222;
+	}
+	
+   h5 {
+	font-size:18px;
+	line-height:22px;
+	color:#222;
+	margin-top: 10px;
+	}
+	
+	h6 {
+   font-size:13px;
+	line-height:26px;
+	color:#222;
+	font-weight: bold;
+	margin-top: 10px;
+	}
+	
+	
+	hr {
+	outline:none;
+	border:none;
+	border-top:1px solid #e8e8e8;
+	margin:10px 0;
+	}
+	
+	a:link {
+	color:#0A8DC7;
+	text-decoration:none;
+	}
+	
+	a:focus {
+	outline-style:none;
+	}
+	
+
+	p {
+	font-size:14px;
+	line-height:21px;
+	color:#222;
+	padding-bottom: 5px;
+	padding-top: 5px;
+	}
+	
+	li {
+	font-size:14px;
+	line-height:21px;
+	color:#222;
+	}
+	
+	
+	ul,ol {
+	margin:0;
+	padding:0;
+	}
+	
+	a:visited,a:hover,a:active {
+	color:#0A8DC7;
+	text-decoration:underline;
+	}
+	
+	.twit-wrap p,.insta-copy p {
+	font-size:13px;
+	line-height:16px;
+	padding:10px;
+	}
+	
+	.schedule .time,.schedule .user-col {
+	border-right:1px solid #444;
+	}
+
+   
+/* =============================================================================
+   Structure
+   ========================================================================== */ 
+	
+	.mobile-wrapper {
+	max-width:1080px;
+	display:block;
+	overflow:hidden;
+	}
+	
+	.mobile-content {
+	width:100%;
+	position:relative;
+	z-index:300;
+	margin-left:0;
+	display:block;
+	background:#FFF;
+	-moz-box-shadow:0 0 15px 5px rgba(0,0,0,0.8);
+	-webkit-box-shadow:0 0 15px 5px rgba(0,0,0,0.8);
+	box-shadow:0 0 15px 5px rgba(0,0,0,0.8);
+	min-height:580px;
+	}
+	
+	.header-wrap {
+	background: #222;
+	height:50px;
+	width:100%;
+	
+	}
+	
+	.header-icon {
+	width:50px;
+	height:50px;
+	background:#343434;
+	display:inline-block;
+	float:left;
+	cursor:pointer;
+	}
+	
+	.header-logo {
+	width:470px;
+	height:50px;
+	display:inline;
+	float:right;
+	background: #FFF; 
+	background:url(images/logo.png) top right no-repeat; 
+   background-size:470px 50px;
+
+	}
+	
+	.mobile-nav {
+	position:absolute;
+	width:320px;
+	top:0;
+	overflow:hidden;
+	z-index:100;
+	background:#2e2e2e;
+	}
+	
+	.mobile-nav li a {
+	border-bottom:1px solid #222;
+	line-height:50px;
+	height:50px;
+	display:block;
+	color:#FFF;
+	font-size:18px;
+	padding-left:10px;
+	background:0;
+	border:0 solid #949494;
+	-moz-box-shadow:0 1px 0 rgba(72,72,72,1), inset 0 0 1px rgba(46,46,46,1);
+	-webkit-box-shadow:0 1px 0 rgba(72,72,72,1),inset 0 0 1px rgba(46,46,46,1);
+	box-shadow:0 1px 0 rgba(72,72,72,1),inset 0 0 1px rgba(46,46,46,1);
+	}
+	
+	.mobile-nav li a:hover {
+	text-decoration:none;
+	background:#000;
+	}
+	
+	.mobile-nav h3 {
+	color:#FFF;
+	font-size:16px;
+	line-height:50px;
+	padding-bottom:0;
+	padding-left:20px;
+	font-weight:300;
+	background:#222;
+	}
+	
+	.hosted-by p { 
+	padding-left: 20px; 
+	padding-right: 80px;
+	color: #CCC;	
+	line-height: 40px;
+	font-size: 12px;
+	}
+	
+	.hosted-by a {
+	color: #CCC;
+	}
+	
+	.view-full-site a {
+	display:block;
+	background:#222;
+	height:50px;
+	line-height:50px;
+	font-size:16px;
+	padding-left:20px;
+	}
+	
+	.view-full-site a:hover {
+	text-decoration:none;
+	background:#222;
+	}
+
+   
+
+   	
+/* =============================================================================
+   Home styles
+   ========================================================================== */ 
+	
+	.sponsor-mask {
+	background:#FFF;
+	border-top:2px solid #CCC;
+	border-bottom:2px solid #CCC;
+	height:100px;
+	overflow:auto;
+	overflow-y:hidden;
+	clear: both;
+	}
+	
+	.sponsor-slider {
+	min-width:600px;
+	}
+	
+	.sponsor-logo {
+	display:inline;
+	float:left;
+	margin:0px 10px 0px 5px;
+	}
+	
+	.page-template-tpl-home-page-php .mobile-content {
+   padding-bottom: 30px;
+	}
+	
+		
+	.alert-wrap {
+	background:#f1f1f1;
+	border-bottom:1px solid #CCC;
+	position:relative;
+	overflow:hidden;
+	vertical-align:middle;
+	border-left: 4px solid #0A8DC7;
+	}
+	
+	.alert-wrap p { padding:10px;}
+	
+	
+	
+/* =============================================================================
+   Default page styles
+   ========================================================================== */ 
+		
+	.page-copy li {
+	font-size:14px;
+	line-height:21px;
+	color:#222;
+	list-style:disc;
+	margin-left: 20px;
+	}
+	.page-copy  img { max-width: 100%;}
+	
+	
+/* =============================================================================
+   Twitter styles
+   ========================================================================== */ 	  
+	
+	.twit-wrap {
+	background:#f1f1f1;
+	border-bottom:1px solid #CCC;
+	position:relative;
+	overflow:hidden;
+	vertical-align:middle;
+	}
+	/* style wc melb tweets */
+	.twitter-id-210697141 { 
+	border-left: 4px solid #0A8DC7;
+	}
+	
+	.twit-wrap p { padding-top: 0; clear: left;}
+	
+	.twitter-image {
+	display:inline;
+	float:right;
+	width:50px;
+	height:50px;
+	overflow:hidden;
+	z-index:2000;
+	-moz-border-radius:5px;
+	-khtml-border-radius:5px;
+	-webkit-border-radius:5px;
+	border-radius:5px;
+	margin:10px;
+	}
+	
+	.twitter-name { 
+	display:inline; float:left; 
+   font-size: 12px;
+   color: #555;
+   font-weight:600;
+   font-family:Raleway, sans-serif;
+   margin-left: 10px; 
+   margin-top: 5px;
+	}
+	
+	.twit-wrap #submit {
+	position:absolute;
+	bottom:0;
+	right:0;
+	background:#000;
+	z-index:500;
+	color:#FFF;
+	border:none;
+	outline:none;
+	height:40px;
+	line-height:40px;
+	}
+	
+	
+/* =============================================================================
+   Instagram styles
+   ========================================================================== */ 
+	.insta-wrap {
+	margin-bottom:20px;
+	background:#f1f1f1;
+	border-bottom:2px solid #CCC;
+	position:relative;
+	overflow:hidden;
+	width:100%;
+	}
+	
+	.insta-wrap-home {
+	background:#f1f1f1;
+	position:relative;
+	overflow:hidden;
+	width:100%;
+	}
+	
+	.insta-image {
+	max-width:100%;
+	position:relative;
+	z-index:100;
+	}
+	
+	a.insta-name {
+	display: block;
+	width: 100%;
+   font-size: 12px;
+   line-height: 24px;
+   color: #555;
+   font-weight:600;
+   font-family:Raleway, sans-serif;
+   margin-left: 10px; 
+   margin-top: 10px;
+	}
+	
+	.insta-copy {
+	height:74px;
+	position:relative;
+	clear: left;
+	}
+	
+	.insta-copy p { padding-top: 0; }
+	.insta-profile {
+	width:50px;
+	height:50px;
+	display:inline;
+	float:left;
+	overflow:hidden;
+	margin-left:10px;
+	margin-top:10px;
+	z-index:2000;
+	margin-right:10px;
+	-moz-border-radius:50px;
+	-khtml-border-radius:50px;
+	-webkit-border-radius:50px;
+	border-radius:50px;
+	}
+	
+	.insta-wrap #submit {
+	position:absolute;
+	top:0;
+	left:0;
+	background:#000;
+	z-index:500;
+	color:#FFF;
+	border:none;
+	outline:none;
+	height:40px;
+	line-height:40px;
+	}
+
+	
+/* =============================================================================
+   Sponsor styles
+   ========================================================================== */
+
+   .sponsor-wrap {
+	background:#f1f1f1;
+	border-bottom:1px solid #CCC;
+	position:relative;
+	overflow:hidden;
+	vertical-align:middle;
+	clear: both;
+	}
+	
+	.sponsor-logo {
+   width: 90px;
+   height: 90px;
+   display:inline;
+   float:left;
+   margin:10px; 
+   }
+   
+	.sponsor-copy { 
+	margin:10px; 
+	}
+	
+	.promo { 
+	margin-bottom: 10px; 
+	font-style: italic;
+	}
+	
+/* =============================================================================
+   Lnks styles
+   ========================================================================== */	
+   .links-wrap { 
+   margin-top: 0px; 
+   border-top:1px solid #CCC;
+   }
+   
+	.links-wrap li {
+	background:#f1f1f1;
+	border-bottom:1px solid #CCC;
+	position:relative;
+	overflow:hidden;
+	vertical-align:middle;
+	clear: both;
+   line-height: 50px; 
+	}
+	
+	.links-wrap li a {
+   color: #222;
+   display: block;
+   padding-left: 20px;
+	}
+
+/* =============================================================================
+   Schedule styles
+   ========================================================================== */ 	   
+   
+	.schedule {
+	width:100%;
+	border-spacing:0;
+	font-size:14px;
+	margin:0;
+	}
+	
+	.schedule span {
+	color:#999;
+	font-size:12px;
+	clear:both;
+	width:100%;
+	display:inline;
+	float:left;
+	}
+	
+	.schedule th {
+	width:33.33%;
+	border:1px solid #444;
+	border-left:none;
+	background:#CCC;
+	color:#000;
+	text-align:center;
+	font-weight:400;
+	border-right:none;
+	padding:5px;
+	}
+	
+	.schedule td {
+	width:33.33%;
+	text-align:center;
+	color:#555;
+	border-bottom:1px solid #444;
+	vertical-align:middle;
+	padding:8px;
+	}
+	
+	.schedule tr {
+	background:#f1f1f1;
+	}
+	
+	.schedule .group {
+	text-align:left;
+	padding-left:20px;
+	}
+	
+	.schedule .break {
+	background:#fcfcfc;
+	}
+	
+/* =============================================================================
+   Talk single page styles
+   ========================================================================== */ 	
+   .speaker-photo { 
+   border: 1px solid #CCC;
+   overflow: hidden;
+   display:inline; float:right; 
+   margin-left: 10px;
+   margin-bottom: 10px;
+   -moz-border-radius:5px;
+   -khtml-border-radius:5px;
+   -webkit-border-radius:5px;
+   border-radius:5px;
+
+   }
+   .talk-speaker-name { 
+   color: #444; 
+   font-style: italic;
+   margin-top: -10px; 
+   }
+   
+   .speaker-buttons a { 
+   width: 100%; 
+   display: block; 
+   line-height: 50px; 
+   height: 50px;
+   background: #222; 
+   color: #FFF;
+   font-size: 13px;
+   margin-top:10px;
+   -moz-border-radius:5px;
+   -khtml-border-radius:5px;
+   -webkit-border-radius:5px;
+   border-radius:5px;
+   overflow: hidden;
+   }
+/* =============================================================================
+   PageNavi styles
+   ========================================================================== */
+   .wp-pagenavi { margin-top: 10px; }
+   
+   .wp-pagenavi span, .wp-pagenavi a {
+   display: inline-block;
+   float: left; 
+   width: 50px; 
+   height: 50px;
+   line-height: 50px;
+   text-align: center; 
+   border: 1px solid #CCC;
+   margin: 0 9px 9px 0;
+   background: #FFF;
+   font-size: 16px;
+   }
+   
+   .wp-pagenavi a {
+   background: #f1f1f1;
+    }
+   .wp-pagenavi a:hover {
+   text-decoration: none; 
+   color: #000;
+   }
+
+/* =============================================================================
+   Icon Font Styles 
+   ========================================================================== */ 
+   	
+	[class*=entypo-]:before {
+	font-family:entypo, sans-serif;
+	color:#eee;
+	font-size:30px;
+	-webkit-font-smoothing:antialiased;
+	text-align:center;
+	line-height:50px;
+	font-weight:400;
+	width:50px;
+	display:inline;
+	float:left;
+	}
+	
+	.mobile-nav [class*=entypo-]:before {
+	font-family:entypo, sans-serif;
+	color:#eee;
+	font-size:20px;
+	text-align:center;
+	line-height:50px;
+	font-weight:400;
+	width:40px;
+	display:inline;
+	float:left;
+	}
+
+	.links-wrap [class*=entypo-]:before {
+	font-family:entypo, sans-serif;
+	color:#222;
+	font-size:20px;
+	text-align:center;
+	line-height:50px;
+	font-weight:400;
+	width:40px;
+	display:inline;
+	float:right;
+	padding-right: 10px;
+	}
+
+  .speaker-buttons a [class*=entypo-]:before {
+	font-family:entypo, sans-serif;
+	color:#eee;
+	font-size:20px;
+	text-align:center;
+	line-height:50px;
+	font-weight:400;
+	width:50px;
+	display:inline;
+	float:left;
+	}
+  
+   .page-title [class*=entypo-]:before {
+	font-family:entypo, sans-serif;
+	color:#222;
+	font-size:20px;
+	text-align:left;
+	line-height:26px;
+	font-weight:400;
+	width:25px;
+	display:inline;
+	float:left;
+	}
+
+
+   
+/* =============================================================================
+   Gravity form styles  
+   ========================================================================== */ 
+   .gform_body { margin-top: 20px;}
+   .gform_body li { margin-bottom: 10px; display: block; list-style: none; margin-left: 0; }
+   .gfield input[type=text] 	{ box-sizing: border-box; font-size: 14px;  height:35px; padding:10px; 
+   border: 1px solid #ccc; -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; 
+   -webkit-box-shadow: inset 0 3px 4px #f8f8f8;-moz-box-shadow: inset 0 3px 4px #f8f8f8; box-shadow:
+   inset 0 3px 4px #f8f8f8; width:100%; }
+   
+   .gfield  select	{ box-sizing: border-box; font-size: 14px;  height:35px; padding:10px; border: 1px solid #ccc;
+   -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: inset 0 3px 4px #f8f8f8;
+   -moz-box-shadow: inset 0 3px 4px #f8f8f8; box-shadow: inset 0 3px 4px #f8f8f8; width:100%; }
+   
+   .gfield textarea 	{ box-sizing: border-box;  font-size: 13px;   padding:10px;  border: 1px solid #ccc; 
+   -moz-border-radius: 4px; -webkit-border-radius: 4px; border-radius: 4px; -webkit-box-shadow: inset 0 3px 4px #f8f8f8;
+   -moz-box-shadow: inset 0 3px 4px #f8f8f8; box-shadow: inset 0 3px 4px #f8f8f8; width:100%;}
+   
+   .gform_footer input[type=submit] {  box-sizing: border-box;  background-color:#555;    border:1px solid #000; 
+   color:#ffffff;    -moz-border-radius:3px;   -webkit-border-radius:3px; border-radius:3px;  display:inline-block;  
+   font-size:15px;   font-weight:normal; padding:10px 30px; margin-left: 10px; margin-top: 10px; margin-bottom: 20px; }
+   
+   .gform_footer input[type=submit]:hover {    cursor:pointer;    background-color:#222;  }   
+   
+   .validation_message { color:red; }
+   
+   
+/* =============================================================================
+   Gravity form styles  
+   ========================================================================== */ 	    
+   #global-nav { display: none; }
+   
+/* =============================================================================
+   320px + media query - mobile 
+   ========================================================================== */
+   @media only screen and (min-width: 320px) and (max-width: 560px)  {	
+   
+    .header-logo {
+   	width:250px;
+   	height:50px;
+   	display:inline;
+   	float:right;
+   	background:url(images/mobile-logo.png) top right no-repeat; 
+   	background-size: 250px 50px;
+   	}
+   	
+   	.insta-grid { width: 100%; padding: 0;}
+   
+      
+   }
+   
+   
+
+   
+/* =============================================================================
+   End of CSS File
+   ========================================================================== */

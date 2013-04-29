@@ -1,0 +1,39 @@
+/**
+ * Hook
+ * Version: 1.0
+ * Author: Jordan Singer, Brandon Jacoby
+ * Copyright (c) 2013 - Hook.  All rights reserved.
+ * http://www.usehook.com
+ */
+ 
+/* 'customizable' declares that a property can be customized without breaking functionality */
+#hook * {
+	margin: 0 auto;
+}
+#hook {
+	/* customizable */ height: 85px;
+	/* customizable */ background: #222;
+	/* customizable */ box-shadow: 0px -9px 15px -15px #000 inset;
+	clear: both;
+	position: relative;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	z-index: 200;
+}
+#hook span#hook-text {
+	/* customizable */ font-size: 14px;
+	/* customizable */ font-family: Arial, Helvetica, sans-serif;
+	/* customizable */ color: #e5e5e5;
+	/* customizable */ font-weight: normal;
+	/* customizable */ 
+}
+#hook #loader {
+	padding: 10px 0;
+}
+#hook .spinner {
+	display: block;
+	/* customizable */ background: url(../images/hook-spinner.gif) no-repeat center;
+ 	/* customizable */ width: 31px;
+ 	/* customizable */ height: 31px;
+}
